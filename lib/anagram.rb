@@ -1,3 +1,4 @@
+require "pry"
 class Anagram
   attr_accessor :word
   def initialize(word)
@@ -5,6 +6,7 @@ class Anagram
   end
   def match(array)
     our_word = @word.split.sort
+    binding.pry
     array.filter { |word| our_word == word.split.sort}
   end
 end
