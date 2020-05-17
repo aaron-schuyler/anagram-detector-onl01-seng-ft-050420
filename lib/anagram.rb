@@ -5,10 +5,7 @@ class Anagram
   end
   def match(array)
     our_word = @word.split.sort
-    array.filter do |word|
-      if our_word == word.split.sort
-        return word
-      end
+    array.filter { |word| our_word == word.split.sort}
     end 
   end
 end
