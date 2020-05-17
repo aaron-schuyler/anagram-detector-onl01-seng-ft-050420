@@ -7,8 +7,8 @@ class Anagram
     our_word = @word.split.sort
     array.each do |word|
       if our_word == word.split.sort
-      return word
-    end
+        return word
+      end
     end 
   end
 end
